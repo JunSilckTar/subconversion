@@ -14,7 +14,7 @@ import LogView from "./LogView.vue";
   <LogView />
   <div class="result">
     <div style="padding-right: 1rem">链接</div>
-    <input type="text" class="">
+    <input type="text">
     <button class="button-fix button-ani">生成订阅</button>
     <button class="button-fix button-ani">复制结果</button>
   </div>
