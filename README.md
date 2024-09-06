@@ -40,4 +40,8 @@ npm run dev
 
 ## License
 
-MIT © 2020 JunSilckTar
+Mozilla Public License 2.0 (MPL 2.0) [LICENSE]
+
+© 09-06-2024
+
+JunSilckTar
