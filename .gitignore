@@ -1,20 +1,41 @@
-# folder
+### macOS ###
 .DS_Store
+.AppleDouble
+Temporary Items
+*.icloud
+
+### Rust ###
+debug/
+target/
+release/
+Cargo.lock
+
+### Node NPM ###
 node_modules
 dist
 dist-ssr
-backend
-.vscode
-.idea
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## other ###
+.git/
 logs
-
-
-## files
-package-lock.json
+backend
+.vscode/
+.idea
+*.iml
+.gitattributes
 *.log
+*.env
+*.env.local
 *.local
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.db
+*.swp
+*.swo
+
