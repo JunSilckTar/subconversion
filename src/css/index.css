@@ -1,5 +1,5 @@
 
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -14,7 +14,7 @@ html::-webkit-scrollbar {
     scroll-behavior: smooth;
     overflow-x: hidden;
     cursor: default;
-    font-family: -apple-system, system-ui, Inter, Avenir, Helvetica, Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-family: -apple-system, "PingFang SC", "JetBrainsMono", system-ui, Inter, Avenir, Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
     user-select: none;
     -webkit-user-select: none;
@@ -31,6 +31,37 @@ body {
     width: 100vw;
     max-height: 100vh;
 }
+
+p {
+    line-height: 0;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    outline: none;
+}
+
+label {
+    font-family: inherit;
+}
+
+div {
+    font-family: inherit;
+}
+
+
+
+
+
+
+
 
 
 

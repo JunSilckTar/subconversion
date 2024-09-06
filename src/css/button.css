@@ -1,0 +1,36 @@
+
+button {
+    border: 2px solid #3478f6;
+    border-radius: 0.6rem;
+    margin-left: 1rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    align-items: center;
+    background: transparent;
+    transition: all 400ms ease-in-out;
+}
+
+button:hover {
+    color: #fafafa;
+    background: #3478f6;
+}
+
+
+.button-fix {
+    background: #3478f6;
+    color: #fafafa;
+}
+
+.button-ani{
+    transition: transform 300ms ease-in-out,background 150ms ease-in-out;
+}
+
+.button-ani:hover {
+    transform: scale(1.12);
+}
+
+.button-ani:active {
+    background: #0046c7;
+}
+

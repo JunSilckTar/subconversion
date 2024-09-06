@@ -1,61 +1,57 @@
-import {storeToRefs} from 'pinia';
-import {useMainStore} from "./Store.js";
+import {useMainStore} from './Store.js';
 
 /**
  * 封装增删改查和 flush 刷新方法
  * @param store Pinia 的 Store
  */
-export function usePinia(store) {
-
-    if (store == null || typeof store === 'undefined') store = useMainStore()
+export function usePinia(store = useMainStore()) {
 
     function add(key, value) {
-        if (store.$state) {
+        if (store && store.$state) {
             store.$patch((state) => {
                 state[key] = value;
             });
         } else {
-            console.error('add wrong');
+            console.error('add failed');
         }
         return this;  // 支持链式调用
     }
 
     function remove(key) {
-        if (store.$state) {
+        if (store && store.$state) {
             store.$patch((state) => {
                 delete state[key];
             });
         } else {
-            console.error('remove wrong');
+            console.error('remove failed');
         }
         return this;
     }
 
     function update(key, value) {
-        if (store.$state) {
+        if (store && store.$state) {
             store.$patch((state) => {
                 state[key] = value;
             });
         } else {
-            console.error('update wrong');
+            console.error('update failed');
         }
         return this;
     }
 
     function query(key) {
-        if (store.$state) {
-            const {[key]: value} = storeToRefs(store);
-            return value.value;  // 获取实际的值
+        if (store && store.$state) {
+            return store.$state[key]; // 直接从 state 获取值
         }
-        console.error('query wrong');
+        console.error('query failed');
         return null;
     }
 
     function flush() {
-        if (store && store.$persist) {
-            store.$persist();
+        if (store && typeof store.$persist === 'function') {
+            store.$persist(); // 确保使用持久化插件
         } else {
-            console.error('flush function is not available');
+            console.error('flush failed or persist not available');
         }
         return this;  // 支持链式调用
     }
@@ -68,4 +64,3 @@ export function usePinia(store) {
         flush,
     };
 }
-

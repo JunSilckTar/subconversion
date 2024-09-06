@@ -1,8 +1,11 @@
 import {createApp} from 'vue'
-import {createPinia} from 'pinia';
-import persisted from 'pinia-plugin-persistedstate';
+import {createPinia} from 'pinia'
+import persisted from 'pinia-plugin-persistedstate'
+import '@@/css/fonts.css'
+import '@@/css/button.css'
 import '@@/css/index.css'
-import '@@/css/home.css'
+import '@@/css/input.css'
+import '@@/css/layout.css'
 import Home from '@@/views/Home.vue'
 
 

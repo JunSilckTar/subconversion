@@ -27,15 +27,14 @@ function selectOption(option) {
 
 <template>
   <div class="form" style="position: relative;">
-    <div class="form-label">客户端</div>
+    <div class="label-fix">客户端</div>
     <input type="text"
            readonly
-           class="form-item"
-           style="flex-grow:0;width: 10rem"
+           style="flex-grow:0;min-width: 8.2rem"
            :value="clientSelected"
            @click="clientToggle">
-    <div class="form-label" style="padding-left: 1rem">后端地址</div>
-    <input type="text" class="form-item" placeholder="可自定义地址">
+    <div class="label-fix padding-fix">后端地址</div>
+    <input type="text" placeholder="可自定义地址">
     <ul v-show="clientDropdown" class="dropdown-options">
       <li v-for="option in clientOptions"
           :key="option" @click="selectOption(option)">{{ option }}

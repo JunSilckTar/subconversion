@@ -1,0 +1,50 @@
+
+input, textarea {
+    flex-grow: 1;
+    width: 0;
+    height: 2.4rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    border: 2px solid rgba(204, 204, 204, 0.4);
+    border-radius: 0.6rem;
+    font-size: 1.16rem;
+    transition: border-color 800ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+textarea {
+    min-height: 2.4rem;
+    overflow-y: hidden;
+    resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+input:focus, textarea:focus {
+    border-color: #3478f6;
+    box-shadow: 0 0 8px rgba(52, 120, 246, 0.3);
+    outline: none;
+}
+
+
+input[type="checkbox"] {
+    height: 1rem;
+    width: 1rem;
+    Vertical-align: middle;
+    margin: 0 0.4rem 0 1rem;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ab45f6;
+    border-color: #4caf50;
+}
+
+input[type="checkbox"] ~ label {
+    font-weight: 600;
+    Vertical-align: middle;
+}
+

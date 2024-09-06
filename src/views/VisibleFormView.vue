@@ -1,29 +1,33 @@
-
 <script setup>
 import {ref} from "vue";
+import {storeToRefs} from 'pinia';
+import {useComponentStore} from "@@/plugins/pinia/Store.js";
 
-// 使用Store
+const {formIsVisible} = storeToRefs(useComponentStore())
+
 // 显示, 控制更多设置的展开
-const formIsVisible = ref(false);
+const formVariable = ref(formIsVisible);
 
+// 选项框数据
 const checkGroup = ref([]);
+
 
 </script>
 
 <template>
   <transition name="fade">
-    <div v-show="formIsVisible">
+    <div v-show="formVariable">
       <div class="form">
-        <div class="form-label">文件名</div>
-        <input type="text" class="form-item" placeholder="自定义文件名">
-        <div class="form-label" style="padding-left: 1rem">包含匹配</div>
-        <textarea class="form-item form-textarea" placeholder="节点名称包含的名字、支持正则"></textarea>
-        <div class="form-label" style="padding-left: 1rem">排除匹配</div>
-        <textarea class="form-item form-textarea" placeholder="节点名称不包含的名字、支持正则"></textarea>
+        <div class="label-fix">文件名</div>
+        <input type="text" placeholder="自定义文件名">
+        <div class="label-fix padding-fix">包含匹配</div>
+        <textarea class="textarea-fix" placeholder="节点名称包含的名字、支持正则"></textarea>
+        <div class="label-fix padding-fix">排除匹配</div>
+        <textarea class="textarea-fix" placeholder="节点名称不包含的名字、支持正则"></textarea>
       </div>
       <div class="form">
-        <div class="form-label">远程配置</div>
-        <input type="text" class="form-item">
+        <div class="label-fix">远程配置</div>
+        <input type="text">
       </div>
       <div class="check-box">
         <div class="check-items">
