@@ -1,6 +1,6 @@
 
 <template>
   <div class="card log">
-    <!--    TODO log显示区域-->
+    <!--    待完成 log显示区域-->
   </div>
 </template>
