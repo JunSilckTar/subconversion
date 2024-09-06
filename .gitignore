@@ -10,6 +10,7 @@ logs
 
 
 ## files
+package-lock.json
 *.log
 *.local
 *.suo
