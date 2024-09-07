@@ -2,14 +2,16 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 mod build;
+mod init;
 mod tool;
-use build::build_trigger;
-use tool::platform;
+mod enums;
+mod database;
+
+use init::init_app;
 
 fn main() {
-    build_trigger::build();
-    let (os, arch) = platform::get_platform_with_arch();
-    println!("Operating System: {}, Architecture: {}", os, arch);
+    if init_app::init() { println!("init successful!") }
+    // build_trigger::build();
 }
 
 

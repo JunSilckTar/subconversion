@@ -12,12 +12,18 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": false,
+      "fs": {
+        "all": true
+      },
+      "shell": {
+        "all": true
+      }
     },
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "",
+      "copyright": "© 2024",
       "deb": {
         "depends": []
       },
@@ -32,7 +38,7 @@
         "icons/1024x1024.png"
       ],
       "identifier": "com.sub.conversion.dev",
-      "longDescription": "",
+      "longDescription": "a locally running, subscription conversion tool.",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -40,8 +46,7 @@
         "providerShortName": null,
         "signingIdentity": null
       },
-      "resources": [],
-      "shortDescription": "",
+      "shortDescription": "Subscription Converter App",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
