@@ -38,11 +38,6 @@ input[type="checkbox"] {
     margin: 0 0.4rem 0 1rem;
 }
 
-input[type="checkbox"]:checked {
-    background-color: #ab45f6;
-    border-color: #4caf50;
-}
-
 input[type="checkbox"] ~ label {
     font-weight: 600;
     Vertical-align: middle;

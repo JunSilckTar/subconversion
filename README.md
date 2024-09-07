@@ -7,6 +7,7 @@
 - [Requirements](#Requirements)
 - [Install](#install)
 - [Usage](#usage)
+- [Package](#package)
 - [License](#license)
 
 
@@ -37,6 +38,25 @@ npm run dev
 
 浏览器访问 <http://localhost:3000/>
 
+
+## Package
+需要安装rust、本机使用的 rustup
+```shell
+rustup --version
+rustup 1.27.1
+
+
+rustc --version
+rustc 1.81.0
+
+# 如果出现问题, 可使用
+rustup default stable
+```
+
+打包
+```shell
+npm run tauri build
+```
 
 ## License
 

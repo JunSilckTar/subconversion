@@ -1,5 +1,5 @@
-import {createApp} from 'vue'
-import {createPinia} from 'pinia'
+import {createApp} from 'vue';
+import {createPinia} from 'pinia';
 import persisted from 'pinia-plugin-persistedstate'
 import '@@/css/fonts.css'
 import '@@/css/button.css'

@@ -7,8 +7,8 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "subconversion",
-    "version": "0.1.0"
+    "productName": "sub-conversion",
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
@@ -23,13 +23,15 @@
       },
       "externalBin": [],
       "icon": [
+        "icons/icon.icns",
+        "icons/icon.ico",
         "icons/32x32.png",
         "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
+        "icons/256x256.png",
+        "icons/512x512.png",
+        "icons/1024x1024.png"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.sub.conversion.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -56,10 +58,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
         "resizable": true,
         "title": "sub-conversion",
-        "width": 800
+        "minWidth": 1000,
+        "minHeight": 720
       }
     ]
   }

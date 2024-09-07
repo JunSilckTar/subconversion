@@ -1,4 +1,15 @@
+## Plans
+
+- tauri
+
+[ - ] 初始化
+
+[ - ] 日志
+
+[ - ] 文件
+
+- sub-converter
+
+[ - ] 后端 
 
 
-## 
-正在研究 tauri 和 sub-converter

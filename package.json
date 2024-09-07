@@ -10,6 +10,7 @@
     "tauri": "tauri"
   },
   "dependencies": {
+    "@tauri-apps/api": "^1.6.0",
     "@types/node": "^22.5.4",
     "pinia": "^2.2.2",
     "pinia-plugin-persistedstate": "^4.0.0",
