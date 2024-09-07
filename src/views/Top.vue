@@ -88,5 +88,3 @@ function openInBrowser(url){
   filter: drop-shadow(0 0 5px #64b687);
 }
 </style>
-<script setup lang="ts">
-</script>
