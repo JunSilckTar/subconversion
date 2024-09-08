@@ -367,14 +367,14 @@ for such a notice.
 You may add additional accurate notices of copyright ownership.
 
 Exhibit B - "Incompatible With Secondary Licenses" Notice
-----------------------------------------------------------------------
+----------------------------------------------------------
 
 This Source Code Form is "Incompatible With Secondary Licenses", as
 defined by the Mozilla Public License, v. 2.0.
 
-----------------------------------------------------------------------
 
 Additional Terms <English>
+---------------------------
 
 In accordance with the terms of the Mozilla Public License Version 2.0
 (hereinafter referred to as "MPL 2.0"), the following additional terms
@@ -394,7 +394,8 @@ of any conflict between these additional terms and any terms in the MPL 2.0,
 the additional terms shall prevail.
 
 
-# 附加条款 (Additional Terms) <Chinese>
+Additional Terms <Chinese>
+---------------------------
 
 根据 Mozilla Public License Version 2.0（以下简称“MPL 2.0”）的许可条款，以下附加
 条款仅适用于本项目：
@@ -408,4 +409,5 @@ the additional terms shall prevail.
 这些附加条款是根据 MPL 2.0 许可的附加条款。如果这些附加条款与 MPL 2.0 中的任何条款发生
 冲突，则以附加条款为准。
 
-----------------------------------------------------------------------
+
+

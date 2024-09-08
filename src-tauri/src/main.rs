@@ -8,10 +8,11 @@ mod enums;
 mod database;
 
 use init::init_app;
+use crate::build::build_trigger;
 
 fn main() {
+    build_trigger::build();
     if init_app::init() { println!("init successful!") }
-    // build_trigger::build();
 }
 
 
