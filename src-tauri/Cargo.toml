@@ -1,3 +1,6 @@
+[workspace]
+members = ["../src-tauri"]
+
 [package]
 name = "sub-conversion"
 version = "0.0.1"
@@ -16,11 +19,17 @@ tauri-build = { version = "1.5.4", features = [] }
 rusqlite = "0.32"
 serde_json = "1.0"
 serde = { version = "1.0", features = ["derive"] }
-tauri = { version = "1.7.2", features = ["shell-open-api", "fs-all", "shell-all"] }
+tauri = { version = "1.7.2", features = ["shell-open-api", "fs-all", "shell-all", "windows7-compat", "dialog-all"] }
 lazy_static = "1.5.0"
 
 [features]
-# this feature is used for production builds or when `devPath` points to the filesystem and the built-in dev server is disabled.
-# If you use cargo directly instead of tauri's cli you can use this feature flag to switch between tauri's `dev` and `build` modes.
 # DO NOT REMOVE!!
 custom-protocol = [ "tauri/custom-protocol" ]
+
+[profile.release]
+panic = "abort" # 发生 panic 时直接 abort 程序，而不是执行复杂的 panic 清理逻辑
+codegen-units = 1 # 指定将所有的 crate 代码生成单元合并为一个单元进行编译
+lto = true # 启用链接时优化
+opt-level = "s" # 设置优化级别为“s”
+strip = true # 从编译后的二进制文件中移除调试符号
+

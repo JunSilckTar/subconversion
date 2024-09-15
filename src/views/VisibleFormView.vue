@@ -19,7 +19,7 @@ const checkGroup = ref([]);
     <div v-show="formVariable">
       <div class="form">
         <div class="label-fix">文件名</div>
-        <input type="text" placeholder="自定义文件名">
+        <input style="flex-grow:0;min-width: 8.8rem" type="text" placeholder="自定义文件名">
         <div class="label-fix padding-fix">包含匹配</div>
         <textarea class="textarea-fix" placeholder="节点名称包含的名字、支持正则"></textarea>
         <div class="label-fix padding-fix">排除匹配</div>

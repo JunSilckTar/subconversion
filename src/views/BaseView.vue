@@ -30,7 +30,7 @@ function selectOption(option) {
     <div class="label-fix">客户端</div>
     <input type="text"
            readonly
-           style="flex-grow:0;min-width: 8.2rem"
+           style="flex-grow:0;min-width: 8.8rem"
            :value="clientSelected"
            @click="clientToggle">
     <div class="label-fix padding-fix">后端地址</div>
