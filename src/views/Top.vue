@@ -18,7 +18,7 @@ function openInBrowser(url){
 <template>
   <div class="top-container">
     <div class="title-area">
-      <img class="icon" src="@@/assets/icons/icon.png" alt="icon">
+      <img class="icon" src="@@/assets/icons/icon_life.png" alt="icon">
       <p style="padding-left: 0.8rem">Sub-Conversion</p>
     </div>
     <div style="display: flex">
