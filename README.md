@@ -1,6 +1,7 @@
 # SubConversion
 
 - 本地后端 [tindy2013/subconverter](https://github.com/tindy2013/subconverter), 配置自动生成。
+- Vue3, Tauri, vite5
 
 ## Table of Contents
 
