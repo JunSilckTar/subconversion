@@ -1,0 +1,9 @@
+{
+  "tauri": {
+    "bundle": {
+      "resources": {
+        "../backend/win64/subconverter/*": "subconverter/win64"
+      }
+    }
+  }
+}

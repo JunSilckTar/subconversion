@@ -54,6 +54,9 @@ rustup default stable
 ```
 
 打包
+
+- 注：在打包之前, 你需要下载对应的后端文件到  <工程目录>/backend/  
+  具体可查看 tauri.conf.json 的另外三个系统架构的配置文件
 ```shell
 npm run tauri build
 ```

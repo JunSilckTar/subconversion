@@ -21,7 +21,6 @@ yarn-error.log*
 .git/
 logs
 backend/*
-design/*
 .sketch
 .vscode/
 .idea

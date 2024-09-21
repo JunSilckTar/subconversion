@@ -6,8 +6,7 @@ use crate::enums::path::Resource;
 lazy_static! {
     static ref PATH_TO_SQL: HashMap<&'static str, &'static str> = {
         let mut m = HashMap::new();
-        m.insert(Resource::AppDB.path(), "database/sql/app.sql");
-        m.insert(Resource::TempLogDB.path(), "database/sql/temp_log.sql");
+        m.insert(Resource::AppConf.path(), "database/sql/app.sql");
         m.insert(Resource::HistoryDB.path(), "database/sql/history.sql");
         m.insert(Resource::LogDB.path(), "database/sql/logs.sql");
         m

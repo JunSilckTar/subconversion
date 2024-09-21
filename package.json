@@ -1,7 +1,7 @@
 {
   "name": "subconversion",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@tauri-apps/api": "^1.6.0",
     "@types/node": "^22.5.4",
+    "fs-extra": "^11.2.0",
     "pinia": "^2.2.2",
     "pinia-plugin-persistedstate": "^4.0.0",
     "vue": "^3.4.37"

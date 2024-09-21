@@ -1,0 +1,10 @@
+{
+  "tauri": {
+    "bundle": {
+      "resources": {
+        "../backend/darwinarm/subconverter": "subconverter/darwinarm",
+        "../backend/darwin64/subconverter": "subconverter/darwin64"
+      }
+    }
+  }
+}

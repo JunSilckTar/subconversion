@@ -1,0 +1,9 @@
+{
+  "tauri": {
+    "bundle": {
+      "resources": {
+        "../backend/linux64/subconverter/*": "subconverter/linux64"
+      }
+    }
+  }
+}
